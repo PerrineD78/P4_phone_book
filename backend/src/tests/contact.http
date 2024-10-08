@@ -1,0 +1,9 @@
+// route localhost doit être la même que celle spécifiée dans app.js ligne 13
+POST http://localhost:5000/api/contact
+Content-Type: application/json
+
+{
+  "firstname": "Caribou",
+  "lastname": "Québec",
+  "phoneNumber": "06 01 02 03 04"
+}

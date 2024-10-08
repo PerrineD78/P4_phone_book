@@ -1,0 +1,36 @@
+.modal_global {
+    position: fixed;
+/* distance depuis le bord haut de la modal */
+    top: 50%;
+    left: 50%;
+/* permet de centrer en prenant les mesures de l'int de la modal */
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    /* width: 20vw;
+    height: 25vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .form {
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        gap: 15px;
+
+        button {
+          border-radius: 10px;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+      }
+    }
+}

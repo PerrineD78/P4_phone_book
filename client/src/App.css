@@ -1,0 +1,28 @@
+.div_globale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      width : 2em;
+      padding-right: 11rem;
+    }
+  }
+  
+  .listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
