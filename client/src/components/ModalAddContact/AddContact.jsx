@@ -6,8 +6,8 @@ import './AddContact.css';
 function AddContact({ onClose }) {
 
   // initialisation de l'état pour gérer la valeur de l'input
-  const [formData, setFormData] = useState({ firstname:"", lastname:"", phoneNumber:""})
-  const { postContact } = useContext(ContactContext)
+  const [formData, setFormData] = useState({ firstname:"", lastname:"", phoneNumber:""});
+  const { postContact } = useContext(ContactContext);
 
   const handleChange = (e) => {
     const {name, value} = e.target
@@ -15,12 +15,16 @@ function AddContact({ onClose }) {
       ...formData,
       [name]: value
     })
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault()
     postContact(formData)
     setFormData({ firstname:"", lastname:"", phoneNumber:""})
+  };
+
+  const handleReset = () => {
+    setFormData({ firstname:"", lastname:"", phoneNumber:""});
   }
 
   return (
@@ -36,7 +40,7 @@ function AddContact({ onClose }) {
           <label htmlFor="phoneNumber">Phone Number :</label>
           <input type="tel" id="phoneNumber" name="phoneNumber" size="10" value={formData.phoneNumber} onChange={handleChange} required />
 
-          <button type="reset">Effacer données</button>
+          <button type="reset" onClick={handleReset}>Effacer données</button>
           <button type="submit" onClick={handleSubmit}>Valider</button>
           <button type="button" onClick={onClose}>Fermer</button>
         </form>

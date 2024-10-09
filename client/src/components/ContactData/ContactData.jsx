@@ -3,7 +3,7 @@ import { ContactContext } from '../../ContactContext.jsx'
 
 import './ContactData.css';
 
-function ContactData({firstname, lastname, phoneNumber}) {
+function ContactData({id, firstname, lastname, phoneNumber}) {
 
   const { updateContact, deleteContact } = useContext(ContactContext);
 
@@ -14,7 +14,7 @@ function ContactData({firstname, lastname, phoneNumber}) {
         <p>{phoneNumber}</p>
         <button>Modifier</button>
         <br/>
-        <button onClick={() => deleteContact(contact.id)}>Supprimer</button>
+        <button onClick={() => deleteContact(id)}>Supprimer</button>
 
     </div>
   )

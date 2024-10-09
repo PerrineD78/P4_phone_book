@@ -35,6 +35,7 @@ function listing() {
         {contacts.map((contact) => (
           <ContactData
             key={contact.id}
+            id={contact.id}
             firstname={contact.firstname}
             lastname={contact.lastname}
             phoneNumber={contact.phoneNumber}
