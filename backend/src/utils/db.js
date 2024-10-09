@@ -8,6 +8,7 @@ sqlite3.verbose()
 export const db = new sqlite3.Database('./src/utils/contact.sqlite')
 
 export const initDB = () => {
+    // execute la commande SQL pour créer une table contact si elle n'existe pas déjà
     const sqlContent = `CREATE TABLE IF NOT EXISTS contact (
       id INTEGER PRIMARY KEY,
       firstname TEXT,
@@ -15,7 +16,6 @@ export const initDB = () => {
       phoneNumber TEXT
     )`;
 
-// execute la commande SQL pour créer une table contacts si elle n'existe pas déjà
     db.exec(sqlContent, (err) => {
         if (err) {
             console.log(`Failed to load SQL query: ${err}`);

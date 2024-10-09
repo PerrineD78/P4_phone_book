@@ -1,7 +1,11 @@
+import { useContext } from 'react';
+import { ContactContext } from '../../ContactContext.jsx'
+
 import './ContactData.css';
 
 function ContactData({firstname, lastname, phoneNumber}) {
-    {console.info(firstname)}
+
+  const { updateContact, deleteContact } = useContext(ContactContext);
 
   return (
     <div className="oneContact">
@@ -10,10 +14,10 @@ function ContactData({firstname, lastname, phoneNumber}) {
         <p>{phoneNumber}</p>
         <button>Modifier</button>
         <br/>
-        <button>Supprimer</button>
+        <button onClick={() => deleteContact(contact.id)}>Supprimer</button>
 
     </div>
   )
 }
 
-export default ContactData
+export default ContactData;
