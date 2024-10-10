@@ -7,3 +7,8 @@ Content-Type: application/json
   "lastname": "Québec",
   "phoneNumber": "06 01 02 03 04"
 }
+###
+
+GET http://localhost:5000/api/contact
+Content-Type: application/json
+
