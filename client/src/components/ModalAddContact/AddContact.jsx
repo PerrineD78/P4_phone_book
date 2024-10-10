@@ -28,7 +28,7 @@ function AddContact({ onClose }) {
   }
 
   return (
-    <div className="modal_global">
+    <div className="modal_editing_global">
       <div className="form">
         <form>
           <label htmlFor="firstname">Firstname :</label>
