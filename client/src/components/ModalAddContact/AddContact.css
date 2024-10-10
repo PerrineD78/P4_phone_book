@@ -8,12 +8,15 @@
     background: rgba(0, 0, 0, 0.5);
     border: solid;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
-    /* width: 20vw;
-    height: 25vh; */
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+
+.modal_global::backdrop {
+  background-color: #448;
+}
     
 
     .form {
@@ -23,6 +26,10 @@
         flex-direction: column;
         padding: 25px;
         gap: 15px;
+
+        input {
+          border-radius: 10px;
+        }
 
         button {
           border-radius: 10px;
