@@ -12,7 +12,7 @@ export const createContact = async (req, res) => {
 export const readAllContact = async (req, res) => {
     try {
         const contacts = await Contact.readAll();
-        res.status(200).json(Contact)
+        res.status(200).json(contacts)
     } catch (error) {
         res.status(500).json("Failed to load contacts");
     }
