@@ -5,40 +5,49 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: solid;
+      border: double #627a8f;
       border-radius: 1rem;
-      color: #213547;
+      color: #034177;
       background-color: rgb(163, 163, 233);
       box-shadow: 10px 5px 5px rgb(163, 163, 233);
-      padding: 1rem;
+      padding: 1.5rem 0.5rem;
+
+      input {
+        border-radius: 10px;
+        margin: 0.3rem
+      }
+      button{
+        border-radius: 10px;
+        margin: 0.3rem;
+      }
     }
   }  
 
   .oneContact {
-          display: flex;
-              flex-direction: column;
-              align-items: center;
-              border: solid;
-              border-radius: 1rem;
-              color: #213547;
-              background-color: rgb(163, 163, 233);
-              box-shadow: 10px 5px 5px rgb(163, 163, 233);
-              padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-radius: 1rem;
+    color: #213547;
+    background-color: rgb(163, 163, 233);
+    box-shadow: 10px 5px 5px rgb(163, 163, 233);
+    padding: 1rem;
 
     p {
         font-weight: bold;
     }  
 
     button {
-        color: #213547;
-        background-color: rgb(163, 163, 233);
-        box-shadow: 10px 5px 5px rgb(163, 163, 233);
-        border-radius: 1rem;
-        padding: 0.3rem;
+      color: #213547;
+      background-color: rgb(163, 163, 233);
+      box-shadow: 10px 5px 5px rgb(163, 163, 233);
+      border-radius: 1rem;
+      padding: 0.3rem;
     }  
     
     button:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
   }
 }
